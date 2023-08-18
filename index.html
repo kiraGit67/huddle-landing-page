@@ -61,7 +61,6 @@
                 <a href="#" class="cta-big">Get Started for free</a>
             </nav>
         </header>
-
         <main>
             <div class="card" id="grow-together">
                 <div class="card__image-wrapper">
@@ -81,7 +80,17 @@
                 </div>
                 <div class="card__content">
                     <h2>Flowing Conversations</h2>
-                    <p>You wouldn't paginate a conversation in real life, so why do it online?</p>
+                    <p>You wouldn't paginate a
+                        <span class="tooltip-span">
+                            <button class="toggle-tooltip" @click="isTooltipVisible = !isTooltipVisible">conversation
+                            </button>
+                            <span class="tooltip" v-if="isTooltipVisible">
+                                Huddle re-imagines the way we build communities. You have a voice, but so does your
+                                audience.
+                            </span>
+                        </span>
+                        in real life, so why do it online?
+                    </p>
                     <p>Our threads have just-in-time loading for a more natural flow.</p>
                 </div>
             </div>
