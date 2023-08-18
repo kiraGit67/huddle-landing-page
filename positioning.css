@@ -14,3 +14,27 @@
   max-width: 80rem;
   margin-inline: auto;
 }
+
+.main-navigation {
+  padding: 4rem 2rem;
+  background-color: var(--color-neutral-dark-cyan);
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 35rem;
+  max-width: 90%;
+}
+
+.main-navigation a {
+  display: block;
+  margin-bottom: 1em;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.main-navigation > .cta-big {
+  margin-inline: 0;
+}
