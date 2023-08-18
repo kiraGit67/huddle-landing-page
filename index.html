@@ -38,7 +38,7 @@
                     <svg class="logo" width="240" height="39">
                         <use href="#logo"></use>
                     </svg>
-                    <button class="cta-small" @click="changeMenuVisible()">Try It Free</button>
+                    <button class="cta-small" @click="isMenuVisible = true">Try It Free</button>
                 </div>
             </nav>
             <div class="card header-card">
@@ -54,10 +54,16 @@
                     <img src="images/illustration-mockups.svg" alt="Mockups" title="Mockups">
                 </div>
             </div>
+            <nav class="main-navigation" v-if="isMenuVisible">
+                <a href="#grow-together" @click="isMenuVisible = false">Grow Together</a>
+                <a href="#flowing-conversation" @click="isMenuVisible = false">Flowing Conversation</a>
+                <a href="#your-users" @click="isMenuVisible = false">Your Users</a>
+                <a href="#" class="cta-big">Get Started for free</a>
+            </nav>
         </header>
 
         <main>
-            <div class="card">
+            <div class="card" id="grow-together">
                 <div class="card__image-wrapper">
                     <img class="card__image" src="images/illustration-grow-together.svg" alt="Grow Together"
                         title="Grow Together">
@@ -68,7 +74,7 @@
                     <p>Think of the insightful conversations you miss out on with a feedback form.</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" id="flowing-conversation">
                 <div class="card__image-wrapper">
                     <img class="card__image" src="images/illustration-flowing-conversation.svg"
                         alt="Flowing Conversation" title="Flowing Conversation">
@@ -79,7 +85,7 @@
                     <p>Our threads have just-in-time loading for a more natural flow.</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" id="your-users">
                 <div class="card__image-wrapper">
                     <img class="card__image" src="images/illustration-your-users.svg" alt="Your Users"
                         title="Your Users">
