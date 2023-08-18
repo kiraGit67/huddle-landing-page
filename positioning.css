@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+  scroll-margin-top: 4rem;
+}
+
 .header-top {
   position: fixed;
   top: 0;
