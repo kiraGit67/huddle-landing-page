@@ -1,0 +1,15 @@
+.header-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+}
+
+.header-top__content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
+}
