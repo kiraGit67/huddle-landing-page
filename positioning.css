@@ -3,12 +3,14 @@ html {
   scroll-margin-top: 4rem;
 }
 
+/* sticky fixed header */
 .header-top {
   position: fixed;
   top: 0;
   width: 100%;
   padding-block: 1rem;
   padding-inline: 2rem;
+  z-index: 2;
 }
 
 .header-top__content {
@@ -20,6 +22,7 @@ html {
   margin-inline: auto;
 }
 
+/* toggle main navigation */
 .main-navigation {
   padding: 4rem 2rem;
   background-color: var(--color-neutral-dark-cyan);
@@ -29,6 +32,7 @@ html {
   bottom: 0;
   width: 35rem;
   max-width: 90%;
+  z-index: 1;
 }
 
 .main-navigation a {
@@ -42,4 +46,42 @@ html {
 
 .main-navigation > .cta-big {
   margin-inline: 0;
+}
+
+/* toggle tooltip > p */
+.tooltip {
+  border-radius: 5px;
+  background-color: var(--color-neutral-pale-cyan);
+  padding: 1.5rem;
+  color: var(--color-neutral-dark-cyan);
+  width: 40ch;
+  box-shadow: 0 0.5em 1.5em 0.1em rgb(0 0 0 / 0.25);
+  position: absolute;
+  top: 25px;
+  transform: translateX(25%);
+  display: block;
+}
+
+.tooltip-span {
+  position: relative;
+}
+
+.toggle-tooltip {
+  color: var(--color-pink);
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.5s ease-in-out;
+}
+
+.toggle-tooltip:hover {
+  background-color: var(--color-pink);
+  color: white;
+  padding-inline: 0.25rem;
+  padding-bottom: 0.15rem;
+  border-radius: 5px;
 }
