@@ -47,7 +47,7 @@ header {
   background-repeat: no-repeat;
   background-position: center center;
 }
-
+/*
 nav {
   display: flex;
   flex-direction: row;
@@ -55,7 +55,7 @@ nav {
   align-items: center;
   _padding: 2rem 1rem;
 }
-
+*/
 .logo {
   max-width: 50%;
 }
